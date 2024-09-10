@@ -1,0 +1,135 @@
+.mainMenuWrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background: rgb(92, 92, 53);
+    padding: 1.5em 3em 6em 3em;
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 30%;
+
+    h1 {
+        font-size: 4em;
+    }
+
+    button {
+        font-size: 1.76em;
+        width: 55%;
+        border-radius: 10px;
+        font-weight: 600;
+        color: rgb(61, 5, 5);
+        background: #b6b4b4;
+        transition: 0.1s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #706f6f;
+        transition: 0.1s ease;
+    }
+
+    .volumeSection {
+        display: flex;
+        gap: 2px;
+
+        svg {
+            width: 52px;
+            height: 52px;
+        }
+    }
+
+    p {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+}
+
+.characterSelectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background: rgb(92, 92, 53);
+    padding: 1.5em 3em 6em 3em;
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 86%;
+
+    .middleSection{
+        display: flex;
+        .characterLister{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 16px 0 0 16px;
+            gap: 5px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            .character{
+                border: 1px solid black;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: gray;
+            }
+            .character:hover{
+                scale: 1.5;
+                filter: drop-shadow(0px 0px 23px #000000);
+            }
+        }
+        .characterStats{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 256px;
+                height: 256px;
+                border: 2px solid black;
+                border-radius: 6px;
+                margin-bottom: 6px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            h3{
+                font-size: 2.25em;
+                text-align: center;
+            }
+            p{
+                font-size: 1.65em;
+                padding-left: 10px;
+            }
+            button{
+                margin: 1em 0 0 2em;
+            }
+        }
+    }
+
+    h1{
+        font-size: 4em;
+    }
+    button {
+        font-size: 1.76em;
+        width: 55%;
+        border-radius: 10px;
+        font-weight: 600;
+        color: rgb(61, 5, 5);
+        background: #b6b4b4;
+        transition: 0.1s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #706f6f;
+        transition: 0.1s ease;
+    }
+    .backBtn{
+        width: 15%;
+    }
+}

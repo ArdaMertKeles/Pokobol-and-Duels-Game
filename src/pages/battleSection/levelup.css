@@ -1,0 +1,101 @@
+.levelUpWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./img/levelupbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    h2{
+        font-size: 4em;
+        color: #ffffff;
+    }
+    .levelUpContainer{
+        padding: 2em;
+        border: 3px solid black;
+        border-radius: 10px;
+        background: rgb(124, 124, 110);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        .stats{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            h4{
+                font-size: 1.2em;
+                padding-bottom: 0.5em;
+                margin-bottom: 0.5em;
+                border-bottom: 1px solid black;
+            }
+            .stat{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                p{
+                    font-size: 2.2em;
+                }
+                button{
+                    cursor: pointer;
+                    background: rgb(124, 32, 32);
+                    border-radius: 3px;
+                    font-size: 2em;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.3s ease;
+                }
+                button:disabled{
+                    cursor: default;
+                    background: rgb(94, 59, 59);
+                    color: gray;
+                }
+                button:disabled:hover{
+                    color: gray;
+                    background: rgb(94, 59, 59);
+                }
+                button:hover{
+                    background: rgb(179, 46, 46);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .shownContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+            img{
+                width: 250px;
+                border: 2px solid black;
+            }
+            button {
+                font-size: 1.3em;
+                width: 55%;
+                border-radius: 10px;
+                font-weight: 600;
+                color: rgb(61, 5, 5);
+                background: #b6b4b4;
+                transition: 0.1s ease;
+                cursor: pointer;
+            }
+
+            button:disabled{
+                color: gray;
+            }
+            button:disabled:hover{
+                cursor: default;
+                background: #b6b4b4;
+            }
+        
+            button:hover {
+                background: #706f6f;
+                transition: 0.1s ease;
+            }
+        }
+    }
+}

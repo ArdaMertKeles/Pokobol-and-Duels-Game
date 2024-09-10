@@ -1,0 +1,7 @@
+.blacksmith{
+    max-width: 385px;
+    margin-left: 2%;
+}
+.unBought{
+    filter: brightness(0.2);
+}

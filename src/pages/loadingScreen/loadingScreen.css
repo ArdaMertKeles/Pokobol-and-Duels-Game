@@ -1,0 +1,65 @@
+.loaderWrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 7em;
+    clip-path: inset(0 100% 0 0);
+    animation: l5 1.5s steps(11) infinite;
+}
+
+.loader:before {
+    content: "Loading...";
+    font-family: 'Medieval Times', sans-serif;
+}
+
+@keyframes l5 {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
+
+.coastLineWrapper{
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    animation: fade-in 2s forwards;
+    .speechText{
+        position: absolute;
+        right: 30%;
+        top: 30%;
+        background: url('../mainMenu/img/vintage-grunge-style-background-with-scratches-stains.jpg');
+        color: aliceblue;
+        width: 30%;
+        font-size: 2em;
+        letter-spacing: 1px;
+        padding: 1.25em;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 28px 27px 0 20px;
+    }
+    .chovalieImage{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        filter: drop-shadow(-4px 0px 18px #000000);
+    }
+}
+
+@keyframes fade-in{
+    7%{
+        background-color: black;
+    }
+    100%{
+        background: url('./img/coastLine.webp') no-repeat center center/cover;
+    }
+}

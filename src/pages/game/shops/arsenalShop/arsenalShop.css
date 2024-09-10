@@ -1,0 +1,142 @@
+@keyframes swipe-up{
+    0%{
+        transform: translateY(700px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.closeBtn{
+    position: absolute;
+    right: -17px;
+    top: -20px;
+    width: 1em;
+    height: 1em;
+    background: rgb(165, 5, 5);
+    font-size: 2.6em;
+    border-radius: 100em;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.3s ease;
+}
+.closeBtn:hover{
+    background: rgb(97, 3, 3);
+    transition: 0.3s ease;
+}
+
+.arsenalShopWrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arsenalShopContainer{
+        position: relative;
+        z-index: 10;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        height: 680px;
+        width: 1220px;
+        animation: swipe-up 0.5s ease ;
+        .insideContainer{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .blacksmith{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 530px;
+            }
+            .textSpeech{
+                position: absolute;
+                top: 5%;
+                right: 15%;
+                background: beige;
+                font-size: 2.4em;
+                letter-spacing: 1.5px;
+                padding: 0.65em;
+                border-radius: 25px 25px 25px 0;
+            }
+            .enterablesContainer{
+                margin-left: 28em;
+                display: flex;
+                gap: 1em;
+                .enterables{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 5px;
+                    img{
+                        border: 2px solid black;
+                        border-radius: 6px;
+                        background: gray;
+                        width: 120px;
+                    }
+                    h3{
+                        background: lightgray;
+                        border: 2px solid black;
+                        border-radius: 6px;
+                    }
+                }
+            }
+            .shownContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 40%;
+                width: 40%;
+                h2{
+                    font-size: 2em;
+                    color: lightgray;
+                }
+                .shownData{
+                    margin-left: 10%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    .item{
+                        cursor: pointer;
+                        img{
+                            width: 120px;
+                            min-height: 120px;
+                            max-height: 120px;
+                            border: 2px solid black;
+                            border-radius: 6px;
+                            background: gray;
+                        }
+                        .details{
+                            background: rgb(148, 37, 37);
+                            padding: 6px;
+                            h3{
+                                font-size: 1.3em;
+                                color: rgb(180, 188, 196);
+                            }
+                            p{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                .backBtn{
+                    cursor: pointer;
+                    margin-top: 1em;
+                    width: 30%;
+                    border-radius: 8px;
+                    font-size: 1.55em;
+                }
+            }
+        }
+    }
+}
+.unBought{
+    filter: brightness(0.2);
+}

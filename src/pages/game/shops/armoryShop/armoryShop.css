@@ -1,0 +1,53 @@
+.enterablesContainerArmory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40%;
+    width: 50%;
+    h2{
+        font-size: 2em;
+        color: lightgray;
+    }
+    .shownDataArmory{
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .item{
+            cursor: pointer;
+            img{
+                width: 120px;
+                min-height: 120px;
+                max-height: 120px;
+                border: 2px solid black;
+                border-radius: 6px;
+                background: gray;
+            }
+            .details{
+                background: rgb(148, 37, 37);
+                padding: 6px;
+                h3{
+                    font-size: 1.3em;
+                    color: rgb(180, 188, 196);
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+.textSpeechArmory{
+        width: 36%;
+        position: absolute;
+        top: 5%;
+        left: 22%;
+        background: beige;
+        font-size: 2.4em;
+        letter-spacing: 1.5px;
+        padding: 0.65em;
+        border-radius: 25px 25px 25px 0;
+}
+.unBought{
+    filter: brightness(0.2);
+}

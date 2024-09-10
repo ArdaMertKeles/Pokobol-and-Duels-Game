@@ -1,0 +1,100 @@
+.statBarContainer{
+    position: absolute;
+    border: 3px solid black;
+    border-top-right-radius: 3em;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background: rgb(92, 92, 87);
+    width: 370px;
+    padding: 1em;
+    .stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 2em;
+            border-bottom: 1px solid black;
+        }
+        p{
+            font-size: 1.15em;
+        }
+    }
+    .healthBarBorder {
+        clip-path: polygon(30% 0%, 70% 0%, 74% 29%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 27% 29%);
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: black;
+        overflow: hidden;
+        padding: 2px;
+        .hp{
+            position: absolute;
+            color: #ffffff;
+            width: 80px;
+            bottom: 40%;
+            left: 58.5%;
+            z-index: 3;
+        }
+        .healthBar {
+            position: relative;
+            width: 135px;
+            background: rgb(128, 7, 7);
+        }
+    }
+}
+.statBarContainerEnemy{
+    position: absolute;
+    border: 3px solid black;
+    border-top-left-radius: 3em;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 2em;
+    background: rgb(92, 92, 87);
+    width: 370px;
+    padding: 1em;
+    .stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 2em;
+            border-bottom: 1px solid black;
+        }
+        p{
+            font-size: 1.15em;
+        }
+    }
+    .healthBarBorder {
+        clip-path: polygon(30% 0%, 70% 0%, 74% 29%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 27% 29%);
+        width: 150px;
+        position: relative;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: black;
+        overflow: hidden;
+        padding: 2px;
+        .healthBar {
+            position: relative;
+            width: 135px;
+            background: rgb(128, 7, 7);
+        }
+        .hp{
+            position: absolute;
+            color: #ffffff;
+            width: 80px;
+            bottom: 35%;
+            left: 34.5%;
+            z-index: 3;
+        }
+    }
+}
