@@ -1,10 +1,28 @@
-# Getting Started with Create React App
+# A Turn Based RPG game made with React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Ek Açıklama 2024-09-15 123500](https://github.com/user-attachments/assets/92798848-f756-4ced-98d7-cef3799e1685)
 
-## Available Scripts
+## You start with character selection page. You can pick your character by their stats or by their looks.
 
-In the project directory, you can run:
+![Ek Açıklama 2024-09-15 123520](https://github.com/user-attachments/assets/4467c3fe-d46b-4e61-86eb-95a8d82d651f)
+
+## After your character selection main town will encounter you. You can visit shops or join duels or tournaments.
+
+![Ek Açıklama 2024-09-15 123550](https://github.com/user-attachments/assets/c90942b2-079a-441d-99ea-9693404c6954)
+
+![Ek Açıklama 2024-09-15 123609](https://github.com/user-attachments/assets/5c525e3b-bfcd-4478-ab19-e4987d3c7705)
+
+![Ek Açıklama 2024-09-15 123625](https://github.com/user-attachments/assets/5bdbaa4e-e434-475b-9211-90c2bfc2f71b)
+
+### And here it is turn based battle system
+
+![Ek Açıklama 2024-09-15 123802](https://github.com/user-attachments/assets/6e08bd48-a48e-4946-8382-d36924017ac3)
+
+![Ek Açıklama 2024-09-15 123829](https://github.com/user-attachments/assets/3b96cfe8-c11c-4bb6-bcd2-1c110f335030)
+
+#### There is also an economy system and xp based level system.
+
+![Ek Açıklama 2024-09-15 123929](https://github.com/user-attachments/assets/0f6f78cb-ac43-4d5e-9187-b1d958356780)
 
 ### `npm start`
 
@@ -38,33 +56,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
