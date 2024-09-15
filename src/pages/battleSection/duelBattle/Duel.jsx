@@ -210,7 +210,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
         if (enemyCurrentHp > 0) {
             let random = Math.floor(Math.random() * 3)
             if (random === 0) {
-                let damage = Math.floor((enemy.attack * 0.5) + (enemy.agility * 0.1))
+                let damage = Math.floor(((enemy.attack * 0.5) + (enemy.agility * 0.15)) * (enemy.accuracy / characterData.defence))
                 setAiAnimation('moveForwardForAi')
                 setEnemyDamage(damage)
                 setPlayerCurrentHp(prev => prev - damage)
@@ -225,7 +225,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
                 let random = Math.random()
                 if (random < enemy.accuracy) {
                     setAiAnimation('moveForwardForAi')
-                    let damage = Math.floor(((enemy.attack * 0.75) + (enemy.agility * 0.3) * (enemy.accuracy / (enemy.accuracy + (characterData.defence + defencePotion)))))
+                    let damage = Math.floor(((enemy.attack * 0.45) + (enemy.agility * 0.15)) * (enemy.accuracy / characterData.defence))
                     setEnemyDamage(damage)
                     setPlayerCurrentHp(prev => prev - damage)
                     setBattleLog(prevLogs => [...prevLogs, { log: `${enemy.name} successfully medium attacked! ${damage} damage dealt...` }])
@@ -247,7 +247,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
                 let random = Math.random()
                 if (random < enemy.accuracy) {
                     setAiAnimation('moveForwardForAi')
-                    let damage = Math.floor(((enemy.attack * 1.5) + (enemy.agility * 0.5) * (enemy.accuracy / (2 * (enemy.accuracy + (characterData.defence + defencePotion))))))
+                    let damage = Math.floor((enemy.attack * 1) + (enemy.agility * 0.55) * (enemy.accuracy / (2 * (enemy.accuracy + characterData.defence))))
                     setEnemyDamage(damage)
                     setPlayerCurrentHp(prev => prev - damage)
                     setBattleLog(prevLogs => [...prevLogs, { log: `${enemy.name} successfully heavy attacked! ${damage} damage dealt...` }])
@@ -274,7 +274,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
             play()
             setCheckMusic(true)
         }
-        let damage = Math.floor((characterData.attack + attackPotion * 0.5) + (characterData.agility + agilityPotion * 0.1))
+        let damage = Math.floor((((characterData.attack + attackPotion) * 0.5) + (characterData.agility + agilityPotion * 0.15)) * (characterData.accuracy / enemy.defence))
         setPlayerDamage(damage)
         setEnemyCurrentHp(prev => prev - damage)
         setButtons(false)
@@ -306,7 +306,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
         }
         let random = Math.random()
         if (random < characterData.accuracy) {
-            let damage = Math.floor((characterData.attack + attackPotion * 0.75) + (characterData.agility + agilityPotion * 0.3) * (characterData.accuracy / (characterData.accuracy + enemy.defence)))
+            let damage = Math.floor(((characterData.attack + attackPotion) * 0.45) + (characterData.agility + agilityPotion * 0.15))
             setPlayerDamage(damage)
             setEnemyCurrentHp(prev => prev - damage)
             setButtons(false)
@@ -340,7 +340,7 @@ export default function Duel({ randomTrackPlayer, randomBattleTrack, setRandomBa
         }
         let random = Math.random()
         if (random < characterData.accuracy) {
-            let damage = Math.floor((characterData.attack + attackPotion * 1.5) + (characterData.agility + agilityPotion * 0.5) * (characterData.accuracy / (2 * (characterData.accuracy + enemy.defence))))
+            let damage = Math.floor(((characterData.attack + attackPotion) * 1) + (characterData.agility + agilityPotion * 0.55) * (characterData.accuracy / (2 * (characterData.accuracy + enemy.defence))))
             setPlayerDamage(damage)
             setEnemyCurrentHp(prev => prev - damage)
             setButtons(false)
