@@ -1,4 +1,4 @@
-# A Turn Based RPG game made with React.js [Live Server](https://pages.github.com/](https://pokobolandduel.netlify.app/)
+# A Turn Based RPG game made with React.js [Live Server](https://pokobolandduel.netlify.app/)
 
 ![Ek Açıklama 2024-09-15 123500](https://github.com/user-attachments/assets/92798848-f756-4ced-98d7-cef3799e1685)
 
